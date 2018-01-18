@@ -2,16 +2,24 @@
   "name": "krishnakotu",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "server.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
+  },
+  "engines": {
+    "node":"~6.9.5",
+    "npm": "~5.6.0"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.6.3",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
