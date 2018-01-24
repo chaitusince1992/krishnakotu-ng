@@ -1,2 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "bootstrap/bootstrap_cutstom";
+@import "variables";
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+
+@font-face {
+    font-family: "Rondalo";
+    src: url("../assets/fonts/Rondalo_.eot?") format("eot"), url("../assets/fonts/Rondalo_.woff") format("woff"), url("../assets/fonts/Rondalo_.ttf") format("truetype"), url("../assets/fonts/Rondalo_.svg#Rondalo") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+htm {
+    font-family: "Rondalo";
+}
+
+.nav-link {
+    padding: 10px 20px;
+    color: $nav-link-color;
+}

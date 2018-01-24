@@ -1,0 +1,12 @@
+
+// $nav-link: $white;
+
+$theme-colors: map-merge((
+  "white":    color('white')
+), $theme-colors);
+
+
+$nav-link-color: theme-color("white");
+$nav-link-hover-color: darken($nav-link-color, 15%);
+$nav-link-hover-decoration: none;
+
