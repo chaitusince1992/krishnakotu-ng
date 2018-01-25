@@ -1,13 +1,14 @@
 
 // $nav-link: $white;
+$font-size-base: 16px;
 
 $theme-colors: map-merge((
-  // "white":    color('white')
+  "white":    color('white')
 ), $theme-colors);
 
 
-$nav-link-color: theme-color("dark");
+$nav-link-color: theme-color("white");
 // $nav-link-hover-bg-color: darken(#ffffff, 15%);
-$nav-link-hover-bg-color: darken(theme-color("primary"), 15%);
+$nav-link-hover-bg-color: darken(theme-color("white"), 15%);
 $nav-link-hover-decoration: none;
 
