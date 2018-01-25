@@ -7,6 +7,7 @@ $theme-colors: map-merge((
 
 
 $nav-link-color: theme-color("dark");
-$nav-link-hover-color: darken($nav-link-color, 15%);
+// $nav-link-hover-bg-color: darken(#ffffff, 15%);
+$nav-link-hover-bg-color: darken(theme-color("primary"), 15%);
 $nav-link-hover-decoration: none;
 

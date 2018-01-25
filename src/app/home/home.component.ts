@@ -1,4 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 @Component({
