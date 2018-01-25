@@ -1,4 +1,4 @@
-<header class="bg-dark">
+<!-- <header class="bg-dark">
   <nav class="container">
     <ul class="d-flex justify-content-around list-unstyled">
       <li class="py-4">
@@ -10,65 +10,83 @@
       <li class="py-4">
         <a class="p-4 text-light" routerLink="/funvillas">Funvilla's</a>
       </li>
-      <!-- <li class="py-4"><a class="p-4 text-light" >Stories</a></li>
+      <li class="py-4"><a class="p-4 text-light" >Stories</a></li>
             <li class="py-4"><a class="p-4 text-light" >UI Development</a></li>
             <li class="py-4"><a class="p-4 text-light" >Misc</a></li>
-            <li class="py-4"><a class="p-4 text-light" >Contact</a></li> -->
+            <li class="py-4"><a class="p-4 text-light" >Contact</a></li>
     </ul>
   </nav>
-</header>
+</header> -->
 
-<header>
-  <nav class="navbar navbar-toggleable-md navbar-inverse bg-dark">
-    <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Navbar</a> -->
-    <ul class="list-unstyled nav justify-content-around mr-auto">
+<header class="container-fluid">
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-white row">
+    <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a> -->
+
+    <ul class="list-unstyled nav col-1">
+      <li>
+        <a routerLink="/">
+          <img src="./assets/img/Krishna.png" alt="" width="70px" />
+        </a>
+      </li>
+    </ul>
+    <ul class="list-unstyled nav justify-content-around ml-auto col-xl-7 col-lg-8 col-md-9 col-md-10 col-11">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
-          <span class="sr-only">(current)</span>
+        <a class="nav-link" routerLink="/">Home
+          <!-- <span class="sr-only">(current)</span> -->
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">UI Dev</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="#">Art Work</a>
       </li>
-      <li class="nav-item dropdown" dropdown>
-        <a class="nav-link dropdown-toggle" dropdownToggle  id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Dropdown</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/legacy-pixels">Legacy Pixels</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/funvillas">Funvilla's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <!-- <li class="nav-item dropdown" dropdown>
+        <a class="nav-link dropdown-toggle" dropdownToggle id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu" *dropdownMenu aria-labelledby="dropdown01">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </header>
 
-<button type="button" class="btn btn-info" 
-        (click)="openModal(template)">Create template modal</button>
+<!-- <button type="button" class="btn btn-info" (click)="openModal(template)">Create template modal</button>
 
 <ng-template #template>
-    <div class="modal-header">
-        <h4 class="modal-title pull-left">Modal</h4>
-        <button type="button" class="close pull-right" 
-                aria-label="Close" (click)="modalRef.hide()">
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
       <span aria-hidden="true">&times;</span>
     </button>
-    </div>
-    <div class="modal-body">
-        This is a modal.
-    </div>
-</ng-template>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template> -->
 
 
-<div style="height: 100vh;" class="align-items-center d-flex w-100 justify-content-center flex-wrap">
+<div style="height:calc( 100vh - 60px );" class="align-items-center d-flex w-100 justify-content-center flex-wrap">
   <div class="text-center">
-    <h1 class="text-danger">Krishna Chaitanya</h1>
+    <!-- <h1 class="text-danger">Krishna Chaitanya</h1> -->
     <br>
     <h2 class="text-info">coming soon....</h2>
   </div>
