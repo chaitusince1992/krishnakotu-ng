@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "bootstrap/bootstrap_cutstom";
 @import "variables";
 
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
@@ -21,6 +20,10 @@ body {
     color: #fff368;
     // background-blend-mode: soft-light;
     // background-color: #d23046;
+    
+    @include media-breakpoint-down(sm) {
+        background-size: 100%;
+    }
 }
 header {
     // box-shadow: 0px 5px 10px #232323;
@@ -43,10 +46,10 @@ a.nav-link {
     font-weight: bold;
     height: 35px;
     &:not([href]) {
-        color: #aaa;
+        color: #aaa !important;
         border: none !important;
         &:hover {
-            color: #aaa;
+            color: #aaa !important;
         }
     }
     &:hover {
