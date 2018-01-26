@@ -36,12 +36,19 @@ header {
     padding-bottom: 15px;
     min-height: calc(100vh - 150px);
 }
-.nav-link {
+a.nav-link {
     padding: 5px 10px;
     margin: 15px 10px;
     color: $nav-link-color;
     font-weight: bold;
     height: 35px;
+    &:not([href]) {
+        color: #aaa;
+        border: none !important;
+        &:hover {
+            color: #aaa;
+        }
+    }
     &:hover {
         color: $nav-link-hover-bg-color;
         border-bottom: 2px solid $nav-link-hover-bg-color;
