@@ -1,0 +1,29 @@
+$box-shadow-color: #d95669;
+$box-shadow-sh: #222222;
+.krish-picture {
+    width: 370px;
+    max-height: 500px;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px #484848;
+    position: relative;
+    background-image: url(/assets/img/krish-profile.jpg);
+    background-size: cover;
+    .box-example {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 7px;
+        width: 10em; //5em radius
+        height: 10em; //5em radius
+        border-radius: 50%;
+        background-color: $box-shadow-color;
+        box-shadow: 
+        0 -6em 0 0em $box-shadow-color,
+        8em -7em 0 0em $box-shadow-color,
+        16em -8em 0 0em $box-shadow-color,
+        24em -9em 0 0em $box-shadow-color,
+        32em -10em 0 0em $box-shadow-color;
+    }
+}

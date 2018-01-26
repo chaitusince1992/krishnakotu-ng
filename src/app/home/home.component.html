@@ -20,20 +20,17 @@
 
 <header class="container-fluid">
   <nav class="navbar navbar-toggleable-md navbar-inverse row py-0">
-    <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Navbar</a> -->
-
     <ul class="list-unstyled nav col-1">
       <li>
         <a routerLink="/">
           <img src="./assets/img/Krishna.png" alt="" width="70px" />
         </a>
       </li>
-    </ul>
-    <ul class="col-lg-7 col-md-9 col-sm-10 col-xl-6 col-11 justify-content-around list-unstyled ml-auto nav">
+    </ul> 
+    <button class="navbar-toggler navbar-toggler-right pr-0 d-flex d-sm-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="assets/img/menu-icon.png" alt="" width="100%"></span>
+    </button>
+    <ul class="col-lg-7 col-md-9 col-sm-10 col-xl-6 col-11 justify-content-around list-unstyled ml-auto nav d-sm-flex d-none" id="navbarToggle">
       <li class="nav-item active">
         <a class="nav-link" routerLink="/">Home
           <!-- <span class="sr-only">(current)</span> -->
@@ -57,8 +54,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
+
       <!-- <li class="nav-item dropdown" dropdown>
-        <a class="nav-link dropdown-toggle" dropdownToggle id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <a class="nav-link dropdown-toggle" dropdownToggle id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">D</a>
         <div class="dropdown-menu" *dropdownMenu aria-labelledby="dropdown01">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
@@ -84,8 +82,8 @@
 </ng-template> -->
 
 <div class="container">
-  <div class="row" style="height: calc(100vh - 100px)">
-    <div class="col-6 align-self-center">
+  <div class="row py-4 py-sm-0">
+    <div class="col-sm-6 col-12 align-self-center">
       <h1>Krishna Chaitanya</h1>
       <ul>
         <li>
@@ -105,8 +103,14 @@
         </li>
       </ul>
     </div>
-    <div class="col-6">
-      <div class="align-items-center d-flex h-100 justify-content-center"><h1>Coming Soon...</h1> </div>
+    <div class="col-sm-6 col-12">
+      <div class="align-items-center d-flex h-100 justify-content-center">
+        <!-- <h1>Coming Soon...</h1> -->
+        <div class="krish-picture">
+          <!-- <div class="box-example"></div> -->
+           <img style="visibility:hidden;" class="w-100" src="./assets/img/krish-profile.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </div>
